@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'slave_1' }
     stages {
         stage('Fetch and Run Branch') {
             steps {
